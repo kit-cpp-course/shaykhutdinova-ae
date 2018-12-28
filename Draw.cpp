@@ -6,12 +6,11 @@ using namespace SolarSystem;
 
 void Engine::draw()
 {
-	// Стираем предыдущий кадр
+	// РЎС‚РёСЂР°РµРј РїСЂРµРґС‹РґСѓС‰РёР№ РєР°РґСЂ
 	window.clear(Color::White);
 
-	// Отрисовываем фон
+	// РћС‚СЂРёСЃРѕРІС‹РІР°РµРј С„РѕРЅ
 	window.draw(BackgroundSprite);
-	/*window.draw(Track.GetCircle());*/
 	window.draw(Earth.GetCircle());
 	window.draw(Mars.GetCircle());
 	window.draw(Sun.GetCircle());
@@ -22,6 +21,6 @@ void Engine::draw()
 	window.draw(Saturn.GetCircle());
 	window.draw(Uranus.GetCircle());
 	window.draw(Neptune.GetCircle());
-	// Отображаем все, что нарисовали
+	// РћС‚РѕР±СЂР°Р¶Р°РµРј РІСЃРµ, С‡С‚Рѕ РЅР°СЂРёСЃРѕРІР°Р»Рё
 	window.display();
 }
